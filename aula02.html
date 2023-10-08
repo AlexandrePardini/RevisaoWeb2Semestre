@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão 2° Aula </title>
+</head>
+<body>
+    <h1>Caracteres especiais</h1>
+    <p>Aspas = "&quot" = &quot; </p>
+    <p>Apóstrofe = "&apos" = &apos; </p>
+    <p>E comercial = "&amp" = &amp; </p>
+    <p>Menor que = "&lt" = &lt; </p>
+    <p>Maior que = "&gt" = &gt; </p>
+    <p>Espaço em branco = "&nbsp" = &nbsp; </p>
+    <br><br>
+    <h1>TAGS</h1>
+    <strong> "Strong" deixa o texto importante, em negrito, </strong>
+    <em> "em" dá enfâse ao texto, deixa em italico </em>
+    <hr> "hr" quebra temática de linha
+    <br><br>
+
+    <h1>Listas ordenadas e não ordenadas</h1>
+    Lista ordenada:
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    Lista não ordenada: 
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <br><br>
+
+    <h1>Tabelas</h1>
+    <p>Nas tabelas a tag tr define uma linha e a tag td define uma coluna</p>
+    <table>
+        <tr>
+            <td>Linha 1 – Coluna 1</td>
+            <td>Linha 1 – Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 2 – Coluna 1</td>
+            <td>Linha 2 – Coluna 2</td>
+        </tr>
+    </table>
+    <br><br>
+    <table border="1";>
+        FATURAMENTO
+        <thead>
+            <tr>
+                <td>JAN</td>
+                <td>FEV</td>
+                <td>MAR</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>R$100,00</td>
+                <td>-R$20,00</td>
+                <td>R$750,00</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>LUCRO</td>
+                <td>PREJUIZO</td>
+                <td>LUCRO</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <br><br><br>
+    <h1>FORMULÁRIOS</h1>
+    <form name="formulario" action="index.html" method="get">
+        <fieldset>
+            <legend>EXEMPLO DE FORMULÁRIO</legend>
+            Nome: <input type="text" name="nome"> <br>
+            Senha: <input type="password" name="senha"> <br>
+            E-mail: <input type="email" name="usermail"> <br>
+            URL: <input type="url" name="homepage"> <br>
+            CAMPO OCULTO: <input name="oculto" type="hidden" value="algoOculto"><br>
+            CARROS: <br>
+            <input type="checkbox" name="carros" value="Camaro">Camaro <br>
+            <input type="checkbox" name="carros" value="Ferrari">Ferrari <br>
+            Botão é chamado no JavaScript: <button type="button">Clique aqui</button> <br>
+            CARREGAR ARQUIVO: <input name="arquivo" type="file"> <br>
+            BOTAO COM IMAGEM: <input name="imagem" type="image" src="images.jpg"> <br>
+            RADIO BUTTON: <br>
+            <input type="radio" name="genero" value="F">Feminino <br>
+            <input type="radio" name="genero" value="M">Masculino <br>
+            <select>
+                <optgroup label="Server-side">
+                <option value="PHP">PHP</option>
+                <option value="JSP">JSP</option>
+                </optgroup>
+                <optgroup label="Client-side">
+                <option value="HTML">HTML</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <textarea rows="8" cols="70" name="msg" placeholder="Digite sua mensagem"></textarea> <br>
+            DISABLED: <input type="text" name="dsb" id="dsb" disabled> <br>
+            MAX LENGTH (5): <input type="text" name="mxl" id="mxl" maxlength="5"> <br>
+            PATTERN: <input type="text" name="ptt" id="ptt" pattern="[A-Za-z]{3}"> <br>
+            READONLY: <input type="text" name="rdl" id="rdl" readonly> <br>
+            REQUIRED: <input type="text" name="rqd" id="rqd" required> <br>
+            SIZE: <input type="text" name="sze" id="sze" size="20"> <br>
+            VALUE: <input type="text" name="vle" id="vle" value="validatedValue"> <br>
+            AUTOFOCUS (VAI TER FOCO QUANDO A PAGINA CARREGA): <input type="text" name="atf" id="atf" autofocus> <br>
+
+
+            Submeter o form: <button type="submit">Enviar</button>
+            
+        </fieldset>
+    </form>
+            
+</body>
+</html>
